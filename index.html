@@ -1,0 +1,340 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     
+        
+      body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+.navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+.navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
+          .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        
+          }
+             .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .navbar .icon {
+            display:flex;
+        }
+
+       
+        @media screen and (max-width: 600px) 
+              {  .navbar.responsive {position: relative;}}
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .body.responsive{
+                position: relative;
+            }
+    
+
+        
+        .content {
+            padding: 20px;
+        }
+   footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+         .logo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+         }
+          header {
+              background-color: #1a73e8;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+          }
+        .container-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+               .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+
+        .container a { 
+            width: 90%;
+            max-width: 1200px;
+            margin:0;
+            padding: 20px;
+            display: flexbox;
+            background-color: rgb(255, 255, 255);
+             
+        }
+    .container {  
+            width: 90%;
+            max-width: 1200px;
+            margin:0;
+            padding: 20px;
+            display: flexbox;
+            background-color: rgb(255, 255, 255);
+             
+        }
+ .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+
+         .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;}
+            .box-shadow{
+                padding-inline: 10 px;
+                box-shadow: #333;
+            }
+            .img{
+                size: 0cap;
+            }
+    
+         .hero {
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative; 
+        }
+                .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+  .info-section {
+            flex: 1;
+            min-width: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+.container-nth-child{
+    background-color: rgb(247, 43, 43);
+    padding-left: 20 px;
+    display: inline;
+}
+    
+.info-section-nth-child{flex: 1;
+            min-width: 300px;
+            display: inline;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+            
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+
+
+
+h1{
+      background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            transform: rotateY('30');
+}
+
+h2{background-color: #6885ac;
+            color: rgb(116, 31, 31);
+            padding: 10px 0;
+            text-align: center;}
+.box{
+    display: grid;
+    padding: 20 px;
+    align-items: center;
+    align-self:center;
+    text-align: center;
+    align-content: center;
+    border: 20px;
+    border: #333;
+    overflow-y: hidden;
+    transition: transform 0.3s ease;
+
+}
+.box:hover{
+   transition: 0.3s;
+    transform: translatey(-10px);
+    transition-behavior:inherit ;
+    
+}
+</style>
+</head>
+<body font color="black"><header>
+ <div class="navbar">
+   
+    <a href="# home" class="active">home</a>
+    <a href="# contacts">contacts</a>
+    <a href="# Why Choose Us">about us</a></div>
+    <br><br></header>
+    <h1>about us</h1>
+    <div class="box"><div class="box-shadow">  in the heart of the city, [Restaurant Name] is a culinary haven that blends exquisite flavors with a warm and inviting atmosphere. Whether you're looking for a cozy dinner spot or a vibrant place to gather with friends, this restaurant offers a memorable dining experience.
+With a menu crafted from the freshest ingredients, [Restaurant Name] serves a delightful fusion of traditional and contemporary dishes that cater to every palate. The skilled chefs bring passion to every plate, ensuring that each meal is a work of art.
+The ambiance is a perfect blend of sophistication and comfort, with elegant décor and soft lighting that create a welcoming environment. Whether you're savoring a delicious meal or enjoying a handcrafted cocktail, the attentive staff ensures top-notch service that makes you feel right at home.
+Ideal for intimate dinners, family gatherings, or celebratory events, [Restaurant Name] is more than just a place to eat—it's an experience to savor
+</div></div></div>
+
+  
+    <div class="gallery-item"><div class="info-section nth-child"><div class="container-grid"><img src="veg.jpeg">
+Vegetarian food is a type of cuisine that excludes meat, poultry, and seafood. It primarily focuses on plant-based ingredients like fruits, vegetables, grains, nuts, seeds, and legumes. Vegetarian diets come in various forms, with some allowing dairy and eggs, while others are more restrictive, like veganism, which excludes all animal products</div></div></div>
+       
+
+
+    
+    <div class="gallery-item"><div class="info-section nth-child"><div class="container-grid"><img src="non-veg.jpeg">
+      <center><font color="black">Non-vegetarian food encompasses any food containing meat, poultry, fish, or other animal-derived products. It is a diverse category, offering a wide range of dishes and culinary traditions. Non-vegetarian foods are often a good source of protein, iron, and other essential nutrients
+
+      </font></center></div></div></div>
+    <div class="gallery-item"><div class="info-section nth-child"><div class="gallery-grid"><img src="burger.jpeg">
+    So this is the best sagement about our restaurant.Ladies and gentlemen biryani is a flavorful South Asian rice dish traditionally made with basmati rice, meat (like chicken, goat, or lamb), and a variety of spices. The dish is known for its layered structure, where marinated meat and fragrant rice are cooked together, often using the "dum pukht" method, meaning "slow-cooked and sealed"</div></div></div>
+       
+
+    
+        <div class="gallery-item"><div class="info-section nth-child"><div class="container-grid"><img src="dessert.jpeg">
+        <center>A dessert is a type of food that is eaten after lunch or dinner, and sometimes after a light meal or snack. It is usually a sweet food, like ice cream, cookies, and cakes. In some countries, cream cheese and fruit are served as dessert.</center></div></div></div></font>
+     
+     <h1>why choose us</h1>
+       <div class="gallery-item"><div class="info-section"><div class="info-section-nth-child"><div class="hero"><font color="black">
+       When choosing a food restaurant, several factors make one stand out from the rest. Here’s a description of what sets a great restaurant apart:
+Authenticity & Quality
+A top-tier restaurant prioritizes fresh, high-quality ingredients and authentic flavors that stay true to the cuisine. Whether it's farm-to-table dishes, traditional recipes, or creative fusion cuisine, the best places focus on delivering excellence in every bite.
+Ambiance & Experience
+Beyond just the food, a memorable dining experience is shaped by the ambiance. A restaurant with a welcoming atmosphere, comfortable seating, thoughtful lighting, and friendly staff creates an environment that keeps customers coming back.
+Variety & Innovation
+A restaurant that offers a diverse menu and unique flavors gives diners more choices. Whether it’s signature dishes, seasonal specials, or modern twists on classic meals, variety ensures that every visit brings something exciting to the table.
+Service & Hospitality
+Exceptional service is a major reason to choose one restaurant over another. From warm greetings to attentive staff who cater to customer needs, great hospitality turns a good meal into an unforgettable experience.
+Hygiene & Cleanliness
+Food safety and cleanliness are critical. A well-maintained restaurant with high hygiene standards and a spotless kitchen ensures trust and satisfaction with every meal.
+Value for Money
+A great restaurant doesn’t just offer delicious food—it also provides value for money. Fair pricing, portion sizes, and exclusive offers create a balance between quality and affordability.
+Would you like a tailored description for a specific type of restaurant or cuisine? I’d be happy to refine it!
+
+ 
+</font></div></div></div></div>
+<h1>our food pricing</h1>
+<div class="info-section"><div class="gallery-item"><div class="gallery-grid">
+
+    <p><b>🥘 Starters</b></p>
+<p >- Paneer Tikka – ₹280
+Grilled cottage cheese cubes marinated in a blend of spices</p>
+<p>- Tandoori Chicken – ₹320
+Succulent chicken roasted in a traditional clay oven</p>
+<p>- Pani Puri Shots – ₹150
+Crispy puris filled with tangy spiced water</p>
+- Samosa Chaat – ₹200
+Crispy samosas crushed and topped with chutneys & yogurt
+<br>
+<p><b>🍛 Main Course</b></p>
+<p>- Butter Chicken – ₹350
+Creamy tomato-based curry with tender chicken pieces</p>
+<p>- Dal Makhani – ₹280
+Slow-cooked black lentils simmered in cream & butter</p>
+<p>- Paneer Butter Masala – ₹300
+Cottage cheese cooked in rich, buttery tomato gravy</p>
+<P>- Hyderabadi Biryani – ₹400
+Fragrant rice layered with spices & tender meat/veg</P>
+<p><b>🍞 Indian Breads & Rice</b></p>
+<p>- Garlic Naan – ₹100
+Soft naan bread infused with garlic butter</p>
+<p>- Tandoori Roti – ₹80
+Whole wheat roti, crisp and earthy</p>
+<p>- Jeera Rice – ₹120
+Basmati rice with aromatic cumin flavor</p>
+<p><b>🍹 Beverages</b></p>
+<p>- Masala Chai – ₹60
+Traditional Indian spiced tea</p>
+<p>- Mango Lassi – ₹140
+Refreshing yogurt-based mango drink</p>
+<p>- Jaljeera Cooler – ₹100
+Tangy cumin-flavored summer drink</p>
+<p><b>🍰 Desserts</b></p>
+<p>- Gulab Jamun – ₹150
+Soft, syrup-soaked dumplings</p>
+<p>- Rasmalai – ₹180
+Sweet, spongy cottage cheese soaked in saffron milk</p>
+<p>- Kesar Kulfi – ₹220
+Creamy, traditional Indian ice cream with saffron</p>
+<br>💳 We Accept All Major Payment Modes
+📍 Dine-In | Takeaway | Delivery Availabl
+
+</div></div></div>
+
+ <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+    
+    </body>  
+</html> 
